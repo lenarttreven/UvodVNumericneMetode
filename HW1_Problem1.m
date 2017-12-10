@@ -18,7 +18,7 @@ for j=1:length(A)-1
     diff_sum = diff_sum + A(j + 1) - A(j);
 end
 
-average_diff = diff_sum / length(A)
+average_diff = diff_sum / (length(A) - 1)
 
 pos = 0;
 for j=1:length(all)

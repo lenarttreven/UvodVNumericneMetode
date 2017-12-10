@@ -11,9 +11,9 @@ for j=1:t
 end
 
 norm = A(t+1,b^(t-1)+1:end);
-denorm = A(t+1,1:b^(t-1));
+denorm = A(t+1,2:b^(t-1));
 
-denormalized = [- b^L * fliplr(denorm(2:end)),b^L * denorm];
+denormalized = [- b^L * fliplr(denorm),b^L * denorm];
 
 rez_norm = [];
 for p=L:1:U
@@ -21,7 +21,7 @@ for p=L:1:U
 end
 
 normalized = [-1 * fliplr(rez_norm), rez_norm];
-all = [-1 * fliplr(rez_norm),- b^L * fliplr(denorm(2:end)),b^L * denorm ,rez_norm];
+all = [-1 * fliplr(rez_norm),denorm ,rez_norm];
 
 end
 
