@@ -37,7 +37,7 @@ float_pi = 0;
 if diff_smaller > diff_greater
     float_pi = first_greater
 else
-    floar_pi = first_greater
+    float_pi = first_smaller
 end    
 
 
