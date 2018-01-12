@@ -11,6 +11,7 @@ priblizki = [T1, T2, T3, T4];
 polinom = @(x) newpoly(x, tocke, priblizki);
 
 %razlika od integrala:
+p_0 = polinom(0)
 razlika = polinom(0)  - (exp(1) - 1)
 
 

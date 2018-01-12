@@ -1,6 +1,6 @@
 close all
-f = @(x) x .* sin(x);
-df = @(x) sin(x) + x.* cos(x);
+f = @(x) x .* sin(3*x);
+df = @(x) sin(3*x) + 3*x.* cos(3*x);
 
 
 A = zeros(11, 4);
